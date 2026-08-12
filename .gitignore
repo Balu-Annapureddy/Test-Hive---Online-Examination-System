@@ -1,0 +1,19 @@
+# Backend
+testhive-backend/target/
+testhive-backend/.mvn/
+testhive-backend/mvnw
+testhive-backend/mvnw.cmd
+testhive-backend/*.jar
+
+# Frontend
+testhive-frontend/node_modules/
+testhive-frontend/dist/
+testhive-frontend/dist-ssr/
+testhive-frontend/.env
+
+# Logs & Temporary Files
+*.log
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
