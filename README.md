@@ -1,6 +1,6 @@
 # TestHive — Full-Stack Online Examination Platform
 
-> **Status**: 🔵 Completed / Portfolio Maintained  
+> **Status**: 🔵 Completed Educational Project  
 > **Target Identity**: TestHive  
 > **License**: MIT License ([LICENSE](LICENSE))  
 
@@ -130,9 +130,21 @@ The React frontend will run at `http://localhost:5173`.
 
 ---
 
+## Security Audit & Verification Notice
+
+An audit of source files found no obvious hardcoded credentials. Configuration files use Spring placeholder defaults (`${DB_USERNAME:root}`, `${DB_PASSWORD:root}`) allowing override via environment variables.
+
+---
+
+## Test Architecture & Missing Coverage Note
+
+Full integration testing for exam time calculations, auto-grading, and submission evaluation requires an active MySQL database instance and a running Spring Boot context (`@SpringBootTest`). Rather than adding superficial test stubs that do not exercise transactional database boundaries, automated integration tests are documented to run via Maven (`mvn test`).
+
+---
+
 ## Limitations
 
-- **Educational & Portfolio Purpose**: Designed for educational demonstration and full-stack engineering portfolio presentation.
+- **Educational Purpose**: Designed for educational demonstration and full-stack engineering portfolio presentation.
 - **Browser Security**: Relies on frontend JavaScript timers for countdown display; production high-stakes testing systems incorporate browser proctoring and server-side socket timers.
 
 ---
